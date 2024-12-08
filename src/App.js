@@ -1,10 +1,13 @@
 import './App.css';
+import MessageDisplay from './Components/MessageDisplay.js'
+
+const message = 'Hello World from React!';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Hello World from React Component</p>
+        <MessageDisplay displayMessage={message}></MessageDisplay>
       </header>
     </div>
   );
